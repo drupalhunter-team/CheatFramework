@@ -19,7 +19,7 @@ namespace Cheats
 	writeMemory and readMemory won't work without it
 	if bBlock is set to true, then the function will wait until successfully attaching to process
 	*/
-	bool setProcess(const std::string& sName, bool bBlock = false);
+	bool attachProcess(const std::string& sName, bool bBlock = false);
 
 	/*
 	Registers hotkey

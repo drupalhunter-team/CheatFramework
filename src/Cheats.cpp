@@ -14,7 +14,7 @@ namespace Cheats
 	HANDLE Process = NULL;
 	std::string ProcessName;
 
-	bool setProcess(const std::string& sName, bool bBlock)
+	bool attachProcess(const std::string& sName, bool bBlock)
 	{
 		do
 		{

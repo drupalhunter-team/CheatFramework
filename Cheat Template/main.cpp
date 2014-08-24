@@ -13,7 +13,7 @@ int main()
 {
 	std::cout << "some nasty hack by nasty haxxor" << std::endl;
 	std::cout << "Attaching to process..." << std::endl;
-	Cheats::setProcess("some_process.exe", true);
+	Cheats::attachProcess("some_process.exe", true);
 
 	std::cout << "Attached!" << std::endl;
 	Cheats::registerHotkey('1', std::bind(feature, true), "feature ON");

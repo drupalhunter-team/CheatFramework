@@ -3,20 +3,23 @@
 #include <functional>
 #include <string>
 
-class Hotkey
+namespace Cheats
 {
-	public:
-	typedef std::function<bool()> CallbackT;
+	class Hotkey
+	{
+		public:
+		typedef std::function<bool()> CallbackT;
 
-	Hotkey();
-	Hotkey(int key, CallbackT callback);
-	~Hotkey();
+		Hotkey();
+		Hotkey(int key, CallbackT callback);
+		~Hotkey();
 
-	std::string toString();
+		std::string toString();
 
-	int Key;
-	CallbackT Callback;
-	bool Active;
-	std::string Description;
-};
+		int Key;
+		CallbackT Callback;
+		bool Active;
+		std::string Description;
+	};
 
+}
